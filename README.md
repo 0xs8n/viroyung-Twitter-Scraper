@@ -115,31 +115,6 @@ The script will:
 
 To stop the script, press `Ctrl+C`.
 
-## Important Files
-
-- `accounts.db` - Auto-generated session database (DO NOT COMMIT TO GIT)
-- `sent_tweets.txt` - Tracks already-sent tweets to prevent duplicates
-- `.gitignore` - Prevents sensitive files from being committed
-
-## Security Best Practices
-
-1. **Never commit sensitive credentials to Git**
-2. Add `accounts.db` and any credential files to `.gitignore`
-3. Consider using environment variables for credentials:
-   ```python
-   import os
-   TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-   ```
-4. Use a dedicated Twitter account (not your personal one)
-5. Keep your repository private if it contains any sensitive data
-
-## Troubleshooting
-
-### "Error adding accounts" or login failures
-- Verify your Twitter credentials are correct
-- Twitter may require 2FA - use app-specific passwords if enabled
-- Try adding cookies from an already logged-in session
-
 ### "Failed to send to Telegram"
 - Verify your bot token is correct
 - Ensure your bot is added to the channel/group as an administrator
