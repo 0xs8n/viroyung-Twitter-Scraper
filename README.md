@@ -22,7 +22,7 @@ Automatically monitors Twitter/X for viral tweets and posts them to your Telegra
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/twitter-viral-scraper.git
+git clone https://github.com/0xs8n/twitter-viral-scraper.git
 cd twitter-viral-scraper
 ```
 
